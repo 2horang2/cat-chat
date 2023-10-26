@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+logging:
+  pattern:
+    console: "%white([%d{yyyy-MM-dd HH:mm:ss}]) %yellow([%thread]) %highlight([%-5level]) %white([%-35logger{35}]) %white(%msg  %n)"
+  level:
+    root: debug
+    jpa: debug
+    org:
+      springframework:
+        orm:
+          jpa: INFO
