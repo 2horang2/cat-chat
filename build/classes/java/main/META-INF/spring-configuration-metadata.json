@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "oauth.kakao",
+      "type": "com.horangya.catchat.login.config.KakaoOauthConfig",
+      "sourceType": "com.horangya.catchat.login.config.KakaoOauthConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "oauth.kakao.client-id",
+      "type": "java.lang.String",
+      "sourceType": "com.horangya.catchat.login.config.KakaoOauthConfig"
+    },
+    {
+      "name": "oauth.kakao.client-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.horangya.catchat.login.config.KakaoOauthConfig"
+    },
+    {
+      "name": "oauth.kakao.redirect-uri",
+      "type": "java.lang.String",
+      "sourceType": "com.horangya.catchat.login.config.KakaoOauthConfig"
+    },
+    {
+      "name": "oauth.kakao.scope",
+      "type": "java.lang.String[]",
+      "sourceType": "com.horangya.catchat.login.config.KakaoOauthConfig"
+    }
+  ],
+  "hints": []
+}
