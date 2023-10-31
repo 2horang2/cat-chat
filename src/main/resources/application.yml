@@ -27,9 +27,16 @@ logging:
   pattern:
     console: "%white([%d{yyyy-MM-dd HH:mm:ss}]) %yellow([%thread]) %highlight([%-5level]) %white([%-35logger{35}]) %white(%msg  %n)"
   level:
-    root: debug
+    root: error
     jpa: debug
     org:
       springframework:
         orm:
           jpa: INFO
+
+oauth:
+  kakao:
+    client_id: 601960133f76e1c25529d3fd224a24be
+    redirect_uri: http://localhost:3000/oauth/redirected/kakao
+    client_secret: js6VznxiZLWBftAlVvEgesrxDVsgmlXO
+    scope: profile_nickname, profile_image

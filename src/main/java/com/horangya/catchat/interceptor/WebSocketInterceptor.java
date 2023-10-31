@@ -19,13 +19,13 @@ class WebSocketInterceptor implements ChannelInterceptor {
     public Message<?> preSend(Message<?> message, MessageChannel channel) {
         StompHeaderAccessor accessor = StompHeaderAccessor.wrap(message);
 
-        if (accessor.getCommand() == StompCommand.CONNECT) {
-            String authToken = accessor.getFirstNativeHeader("auth-token");
-
-            if (!"spring-chat-auth-token".equals(authToken)) {
-                throw new AuthException("fail");
-            }
-        }
+//        if (accessor.getCommand() == StompCommand.CONNECT) {
+//            String authToken = accessor.getFirstNativeHeader("auth-token");
+//
+//            if (!"spring-chat-auth-token".equals(authToken)) {
+//                throw new AuthException("fail");
+//            }
+//        }
 
         return message;
     }
